@@ -119,13 +119,13 @@ class SensorsScreen extends ConsumerWidget {
                         isDanger: farmData.waterLevel < 30,
                       ),
 
-                    if (farmData.feedLevel != null)
-                      SensorCard(
-                        title: "Yem Doluluk",
-                        value: "${farmData.feedLevel}%",
-                        icon: FontAwesomeIcons.wheatAwn,
-                        color: _getFeedStockColor(farmData.feedLevel!),
-                        isDanger: farmData.feedLevel! < 20,
+                      if (farmData.feedLevel != null)
+                        SensorCard(
+                          title: "Yem Doluluk",
+                          value: "${farmData.feedLevel}%",
+                          icon: FontAwesomeIcons.wheatAwn,
+                          color: _getFeedStockColor(farmData.feedLevel!),
+                          isDanger: farmData.feedLevel! < 20,
                         ),
                       if (farmData.lightLevel != null)
                         SensorCard(

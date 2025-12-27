@@ -1,60 +1,13 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-venv/
-env/
-ENV/
-*.egg-info/
-dist/
-build/
-
-# Database
-*.db
-*.sqlite
-*.sqlite3
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# Flutter/Dart
-frontend/.dart_tool/
-frontend/.flutter-plugins
-frontend/.flutter-plugins-dependencies
-frontend/.packages
-frontend/build/
-frontend/ios/Flutter/flutter_export_environment.sh
-frontend/ios/Flutter/Generated.xcconfig
-frontend/ios/Pods/
-frontend/android/.gradle/
-frontend/android/app/debug/
-frontend/android/app/profile/
-frontend/android/app/release/
-frontend/pubspec.lock
-
-# Models (too large for git)
+# YOLO Models (too large for git)
 *.pt
-*.pth
-*.onnx
-*.tflite
+yolo*.pt
+edge/*.pt
 
-# Logs
-*.log
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Environment variables
-.env
-.env.local
-
-# Temporary files
-*.tmp
-*.bak
+# Build artifacts and cache
+__pycache__/
+*.pyc
+*.db
+frontend/build/
+frontend/android/app/build/
+frontend/android/build/
+frontend/.dart_tool/

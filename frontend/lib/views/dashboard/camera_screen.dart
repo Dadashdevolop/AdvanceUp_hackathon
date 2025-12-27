@@ -78,7 +78,8 @@ class _CameraScreenState extends ConsumerState<CameraScreen> {
                                               color: Colors.black,
                                               child: Image.memory(
                                                 base64Decode(
-                                                    farmData.imageBase64!),
+                                                  farmData.imageBase64!,
+                                                ),
                                                 gaplessPlayback: true,
                                                 fit: BoxFit.cover,
                                                 width: double.infinity,
@@ -93,19 +94,18 @@ class _CameraScreenState extends ConsumerState<CameraScreen> {
                                                   Icon(
                                                         FontAwesomeIcons
                                                             .videoSlash,
-                                                        color:
-                                                            Colors.white24,
+                                                        color: Colors.white24,
                                                         size: 50,
                                                       )
                                                       .animate(
                                                         onPlay: (controller) =>
                                                             controller.repeat(),
                                                       )
-                                                      .fadeIn(
-                                                          duration: 800.ms)
+                                                      .fadeIn(duration: 800.ms)
                                                       .then()
                                                       .fadeOut(
-                                                          duration: 800.ms),
+                                                        duration: 800.ms,
+                                                      ),
                                                   const SizedBox(height: 10),
                                                   const Text(
                                                     "Sinyal Bekleniyor...",
